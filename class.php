@@ -41,14 +41,3 @@ class Task {
 
 }
 
-$tasks = [
-
-	new Task('Go to my room'),
-
-	new Task('Finish my work from home todos'),
-
-	new Task('Clean my room')
-
-];
-
-$tasks[0]->complete();
