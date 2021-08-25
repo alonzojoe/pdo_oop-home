@@ -9,6 +9,8 @@ $router->define([
 
 	'about/culture' => 'controllers/about-culture.php',
 
-	'contact' => 'controllers/contact.php'
+	'contact' => 'controllers/contact.php',
+
+	'name' => 'controllers/add-name.php'
 
 ]);

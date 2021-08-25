@@ -1,23 +1,10 @@
-<?php include ('partials/nav.php'); ?>
+<?php require ('partials/head.php'); ?>
+<h1>Submit Your Name</h1>
 
-	<h1>Tasks / Todos</h1>
+<form method="GET" method="/names">
+	<input name="name"></input>
 
-	<ul>
-		
-		<?php foreach($tasks as $task) : ?>
-
-			<?php if($task->completed) : ?>
-
-				<li><strike><?= $task->description; ?></strike></li>
-
-			<?php else : ?>
-
-				<li><?= $task->description; ?></li>
-
-			<?php endif; ?>
-
-		<?php endforeach; ?>
-
-	</ul>
+	<button type="submit">Submit</button>
+</form>
 
 <?php require ('partials/footer.php');

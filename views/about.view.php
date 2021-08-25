@@ -1,5 +1,5 @@
-<?php include ('partials/head.php'); ?>
+<?php require ('partials/head.php'); ?>
 
 	<h1>About Us</h1>
 
-<?php include ('partials/footer.php'); ?>
+<?php require ('partials/footer.php'); ?>
