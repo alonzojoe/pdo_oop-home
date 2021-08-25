@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-
-	<title>PDO OOP</title>
-
-	<style>
-		header {
-			padding: 2em;
-
-			text-align: center;
-		}
-
-	</style>
-
-</head>
-<body>
-	<nav>
-		<li><a href="">Home</a></li>
-		<li><a href="/about">About</a></li>
-		<li><a href="/about/culture">About Culture</a></li>
-		<li><a href="/contact">Contact Us</a></li>
-
-
-
-	</nav>
+<?php include ('partials/nav.php'); ?>
 
 	<h1>Tasks / Todos</h1>
 
@@ -46,5 +20,4 @@
 
 	</ul>
 
-</body>
-</html>
+<?php require ('partials/footer.php');
