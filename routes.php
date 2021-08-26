@@ -11,6 +11,6 @@ $router->define([
 
 	'contact' => 'controllers/contact.php',
 
-	'name' => 'controllers/add-name.php'
+	'names' => 'controllers/add-name.php'
 
 ]);
