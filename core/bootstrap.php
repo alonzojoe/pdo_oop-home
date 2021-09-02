@@ -3,21 +3,22 @@
 $app = [];
 
 
+App::bind('config', require 'config.php');
 
-$app['config'] = require 'config.php';
+/*$app['config'] = require 'config.php';
 
-require 'core/Router.php';
+require 'core/Router.php'; //no need when composer is installed
 
-require 'core/Request.php';
+require 'core/Request.php'; //no need when composer is installed 
 
-require 'core/database/Connection.php';
+require 'core/database/Connection.php'; //no need when composer is installed
 
-require 'core/database/QueryBuilder.php';
+require 'core/database/QueryBuilder.php'; //no need when composer is installed*/
 
 
 
-$app['database'] = new QueryBuilder(
+App::bind('database', new QueryBuilder(
 
-	Connection::make($app['config']['database'])
+	Connection::make(App::get('config')['database'])
 
-);
+));

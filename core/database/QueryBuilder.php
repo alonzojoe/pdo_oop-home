@@ -21,4 +21,29 @@ class QueryBuilder {
 
 	}
 
+	public function insert($table, $parameters) {
+
+		$columns = implode(', ', array_keys($parameters));
+
+		$values = ':' . implode(', :', array_keys($parameters));
+
+		$sqlstring = sprintf(
+			'INSERT INTO %s (%s) VALUES (%s)', $table, $columns, $values
+		);
+
+		try {
+			
+			$query = $this->pdo->prepare($sqlstring);
+
+			$query->execute($parameters);
+
+
+		} catch (PDOException $e) {
+			die('Data not inserted');
+		}
+
+
+
+	}
+
 }
