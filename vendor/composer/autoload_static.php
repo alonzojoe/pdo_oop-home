@@ -7,11 +7,12 @@ namespace Composer\Autoload;
 class ComposerStaticInitbff000217df83bfc425e0dc04487691b
 {
     public static $classMap = array (
-        'App' => __DIR__ . '/../..' . '/core/App.php',
-        'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
-        'App\\Controllers\\UsersController' => __DIR__ . '/../..' . '/controllers/UsersController.php',
+        'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
+        'App\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/controllers/UsersController.php',
+        'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
         'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
+        'App\\Model\\Project' => __DIR__ . '/../..' . '/app/models/Project.php',
         'ComposerAutoloaderInitbff000217df83bfc425e0dc04487691b' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInitbff000217df83bfc425e0dc04487691b' => __DIR__ . '/..' . '/composer/autoload_static.php',

@@ -1,4 +1,4 @@
-<?php
+/<?php
 
 
 $router->get('', 'PagesController@home');

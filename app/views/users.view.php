@@ -11,7 +11,7 @@
 
 <h1>Submit Your Name</h1>
 <form method="POST" action="/users">
-	<input name="name"></input>
+	<input name="name" required></input>
 
 	<button type="submit">Submit</button>
 </form>
